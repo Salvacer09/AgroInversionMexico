@@ -1,0 +1,255 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Barra de navegación fija */
+header {
+    background: white;
+    padding: 10px 0;
+    position: fixed; /* La barra es fija */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero section con diseño dividido */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b5b3c;
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.left-panel {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuir elementos arriba y abajo */
+}
+
+.upper-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Reducir la distancia entre textos */
+}
+
+/* Centrar verticalmente solo el texto "Agro Inversión México" */
+.left-panel h1 {
+    font-size: 5em; /* Hacer el texto más grande */
+    margin-top: auto; /* Empuja el texto hacia abajo */
+    margin-bottom: auto; /* Empuja el texto hacia arriba, centrando verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.lower-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 1px;
+    text-align: center; /* Centrar el texto en el contenedor */
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image {
+    max-width: 90%; /* Ajustar para responsividad */
+    height: auto;
+}
+
+/* Colores del texto */
+.green-text {
+    color: #00ff00;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.red-text {
+    color: #ff0000;
+}
+
+/* Estilos para la sección de Conócenos */
+#conocenos {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.crowdfunding-image {
+    width: 40%; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px;
+}
+
+.info-text {
+    width: 55%;
+    text-align: left;
+}
+
+.info-text h3 {
+    color: #004400;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .info-panel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .crowdfunding-image, .info-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Sección de Proyectos con tarjetas */
+.tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 28%; /* Se reduce el ancho para que entren 3 tarjetas en una fila */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Ajuste para que las imágenes sean cuadradas y se vean correctamente */
+.tarjeta img {
+    width: 100%; /* Tamaño completo del ancho de la tarjeta */
+    height: 200px; /* Fijamos la altura para que todas sean iguales */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    color: #004400;
+}
+
+.tarjeta p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: #1b5b3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #004400;
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 50px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-panel, .right-panel {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .upper-text {
+        font-size: 1.1em;
+    }
+
+    .left-panel h1 {
+        font-size: 3em; /* Ajustar tamaño en pantallas pequeñas */
+    }
+
+    .lower-text {
+        font-size: 1.4em;
+    }
+
+    .map-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Las tarjetas se apilan verticalmente en pantallas pequeñas */
+    .tarjeta {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

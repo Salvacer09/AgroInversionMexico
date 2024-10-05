@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Inversión México</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#conocenos">Conócenos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <div class="hero">
+            <div class="left-panel">
+                <p class="upper-text">IMPULSANDO LA AUTOSUFICIENCIA ALIMENTARIA EN MÉXICO</p>
+                <h1><span class="green-text">Agro</span> <span class="white-text">Inversión</span> <span class="red-text"><br>México</span></h1>
+                <p class="lower-text">Apoya el Futuro de la Agricultura Mexicana</p>
+            </div>
+            <div class="right-panel">
+                <img src="/Imagenes/logo.jpg" alt="Mapa de México con planta" class="map-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Conócenos -->
+<section id="conocenos">
+    <h2>¿Quiénes somos?</h2>
+    <p>En Agro Inversión México, creemos en el poder de la comunidad para transformar el futuro de la agricultura. Somos una plataforma de crowdfunding dedicada a conectar a agricultores mexicanos con personas comprometidas a apoyar proyectos agrícolas innovadores y sostenibles.</p>
+
+    <!-- Panel informativo sobre Crowdfunding -->
+    <div class="info-panel">
+        <img src="/Imagenes/quienessomos.png" alt="Crowdfunding" class="crowdfunding-image">
+        <div class="info-text">
+            <h3>¿Qué es el Crowdfunding?</h3>
+            <p>El crowdfunding es un modelo de financiamiento colaborativo en el que muchas personas aportan pequeñas cantidades para apoyar un proyecto. En Agro Inversión México, utilizamos este modelo para conectar a los agricultores con personas que quieran ayudar a transformar el futuro de la agricultura en México.</p>
+            <h3>Estado del Proyecto</h3>
+            <p>Actualmente, nuestro proyecto está en etapa de desarrollo, por lo que en este momento solo estamos manejando donaciones directas para apoyar a los agricultores. ¡Gracias por tu apoyo mientras seguimos trabajando para hacer realidad esta plataforma!</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos">
+        <h2>Apoya nuestros Proyectos</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="/Imagenes/brisa_invernaderos.jpg" alt="Brisa y sus invernaderos">
+                <h3>Brisa y sus invernaderos</h3>
+                <p>Apasionada por la agricultura y dueña de más de 20 invernaderos que producen más de 5 toneladas de diversas cosechas.</p>
+                <a href="proyecto_brisa.html" target="_blank" class="boton">LEER MÁS</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="/Imagenes/antonio_raul.jpg" alt="Don Antonio y su hijo Raúl">
+                <h3>Don Antonio y su hijo Raúl</h3>
+                <p>Esta familia de agricultores ubicados en Uruapan Michoacán son el ejemplo perfecto de emprendimiento.</p>
+                <a href="proyecto_antonio.html" target="_blank" class="boton">LEER MÁS</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="/Imagenes/maiz_hector.jpg" alt="Conoce a Héctor">
+                <h3>Conoce a Héctor</h3>
+                <p>Héctor cuenta con más de 2.4 hectáreas ubicadas en Tlaxcala para la siembra de maíz.</p>
+                <a href="proyecto_hector.html" target="_blank" class="boton">LEER MÁS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Si tienes un proyecto agrícola innovador o sostenible y necesitas financiación, ¡queremos conocerte!</p>
+        <p><strong>Dirección:</strong> Av. Telecomunicaciones, México</p>
+        <p><strong>Correo:</strong> agroinversionmexico@gmail.com</p>
+        <p><strong>Teléfono:</strong> 56-28-52-98-59</p>
+    </section>
+
+    <!-- JavaScript para fijar la barra de navegación -->
+    <script>
+        window.onscroll = function() {
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        }
+    </script>
+</body>
+</html>
